@@ -21,20 +21,18 @@ public class CocheDao implements IntGestion {
     public void setListaCoches(List<Coche> listaCoches) {
         this.ListaCoches = listaCoches;
     }
-    /*Este metodo busca dentro de la lista coche obteniendo la matrícula de cada objeto coche y comprandola con la
+    /*Este metodo busca dentro de la lista coche obteniendo la matrícula de cada objeto coche y comparandola con
     la matrícula del objeto coche que se le pasa como parametro de entrada*/
     @Override
     public boolean añadirCoche(Coche coche) {
         for (Coche buscar : ListaCoches) {
             if (buscar.getMatricula().equals(coche.getMatricula())) {
-                System.out.println("Ya esiste el coche con la matricula : " + coche.getMatricula());
+                System.out.println("Ya existe un coche con la matrícula: " + coche.getMatricula());
                 return false;
-            }else {
-                ListaCoches.add(buscar);
             }
-
         }
-        return false;
+        ListaCoches.add(coche);
+        return true;
     }
     /*La metodologia es la misma que en el metodo anterior, recorremos la lista y sacamos el parametro que queremos
     comparar y lo comparamos con el parametro de entrada*/

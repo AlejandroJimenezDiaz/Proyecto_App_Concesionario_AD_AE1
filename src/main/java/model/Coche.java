@@ -34,13 +34,12 @@ public class Coche implements Serializable {
     /*Generamos el metodo ToString para tener los datos del objeto coche en su conjunto*/
     @Override
     public String toString() {
-        return "Coche{" +
-                "id=" + id +
-                ", matricula='" + matricula + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
-                ", precio=" + precio +
-                '}';
+        return "Coche<-------------> " + "\n"+
+                "\t\tid= " + this.id + "\n" +
+                "\t\tmatricula= " + this.matricula + "\n" +
+                "\t\tmarca= " + this.marca + "\n" +
+                "\t\tmodelo= " + this.modelo + "\n" +
+                "\t\tcolor= " + this.color + "\n" +
+                "\t\tprecio= " + this.precio;
     }
 }
