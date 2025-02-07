@@ -4,3 +4,4 @@ Curso : 2ºDAM <br>
 Modulo : Acceso a Datos <br>
 Alumno : Alejandro Jiménez Díaz <br>
 Profesor : Borja Martin Herrera <br>
+Con este proyecto se pone en practica el flujo de datos.
